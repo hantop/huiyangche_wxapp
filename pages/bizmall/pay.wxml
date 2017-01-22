@@ -1,0 +1,17 @@
+<view class="page">
+  <view class="page__hd">
+    <text class="page__title">支付测试</text>
+  </view>
+  <view class="page__bd">
+    
+    <view class="section">
+      <input bindinput="bindOrderIDInput" placeholder="此处输入订单号" focus="{{focus}}" />
+      <view class="btn-area">
+        <button bindtap="bindButtonTap">支付</button>
+      </view>
+    </view>
+  </view>
+  <view class="page__hd">
+      <text class="page_pay_title">{{infoMess}}</text>
+  </view>
+</view>

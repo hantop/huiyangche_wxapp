@@ -5,7 +5,8 @@
     "pages/querybrand/querybrand",
     "pages/queryserial/queryserial",
     "pages/bizmall/pay",
-    "pages/share/index"
+    "pages/share/index",
+    "pages/op/wzstat"
   ],
   "window":{
     "backgroundTextStyle":"light",

@@ -3,7 +3,7 @@
 var app = getApp()
 Page({ 
  data: {
-    background: ['green', 'red', 'yellow'],   
+    background: ['green', 'red', 'yellow'],
     indicatorDots: true,
     vertical: false,
     autoplay: false,

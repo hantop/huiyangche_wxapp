@@ -4,7 +4,8 @@
     "pages/logs/logs",
     "pages/querybrand/querybrand",
     "pages/queryserial/queryserial",
-    "pages/bizmall/pay"
+    "pages/bizmall/pay",
+    "pages/share/index"
   ],
   "window":{
     "backgroundTextStyle":"light",

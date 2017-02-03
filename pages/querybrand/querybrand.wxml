@@ -1,7 +1,0 @@
-<view class="section"> 
-  <navigator wx:for="{{CarBrands}}" bindtap="ToCarSerial"  data-hi='{{item.MasterBrandID}}'   >
-  <view class="flex-wrp" style="flex-direction:column;" data-hi='{{item.MasterBrandID}}'  >
-    <image src="{{item.MasterBrandLogo}}" ></image>
-  </view>
-  </navigator>
-</view>

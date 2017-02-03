@@ -1,6 +1,0 @@
-<view class="section">
-  <view class="section__title">flex-direction: column</view>
-  <view class="flex-wrp" style="flex-direction:column;" wx:for="{{CarSerials}}" >
-    <image src="{{item.SerialLogo}}" bindtap="ToCarSerial('{{item.SerialID}}')"></image>
-  </view>
-</view>

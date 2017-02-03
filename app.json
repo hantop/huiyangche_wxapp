@@ -5,9 +5,14 @@
     "pages/querybrand/querybrand",
     "pages/queryserial/queryserial",
     "pages/bizmall/pay",
+<<<<<<< HEAD
     "pages/ChooseCar/ChooseCarBrand",    
     "pages/ChooseCar/ChooseCarSerial",    
     "pages/ChooseCar/ChooseCar"
+=======
+    "pages/share/index",
+    "pages/op/wzstat"
+>>>>>>> huiyangche/master
   ],
   "window":{
     "backgroundTextStyle":"light",

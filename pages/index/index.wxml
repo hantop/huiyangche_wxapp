@@ -7,6 +7,8 @@
         <swiper-item>
          <button class="button"  bindtap="ToAddCar" >添加</button>
           <navigator url="/pages/querybrand/querybrand" hover-class="navigator-hover">跳转到新页面</navigator>
+          <navigator url="/pages/bizmall/pay" hover-class="navigator-hover">支付</navigator>
+          <navigator url="/pages/share/index" hover-class="navigator-hover">分享</navigator>
         </swiper-item>
         <block wx:for="{{UserCarInfos}}">
           <swiper-item>

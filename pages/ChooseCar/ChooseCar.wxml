@@ -1,0 +1,31 @@
+<view>
+  <image src="{{CarSerialLogo}}"></image>
+  <view class="section__title">{{CarSerialName}}</view>
+  <image src="{{CarBrandLogo}}"></image>
+  <view class="section__title">{{CarBrandName}}</view>
+</view>
+<!--<view class="section">
+  <view class="flex-wrp" style="flex-direction:column;" wx:for="{{Cars}}"></view>
+</view>-->
+循環對象的
+
+<view  wx:for="{{CarYears}}" wx:for-item="y" >
+ <view>{{y}}</view> 
+ <view   wx:for="{{Cars[index]}}" wx:for-item="c">
+ 
+    <view>{{c.CarFullName}}</view>
+ 
+</view>
+</view>
+
+
+模板的
+<view> <template is="caryear_group"></template>
+</view>
+
+<template name="caryear_group"  wx:for="{{groupBylist}}" >
+  <view> {{item.key}} </view>
+  <view wx:for="{{itme}}" wx:for-item="car" >
+    <view>{{car.CarFullName}}</view>
+  </view>
+</template>

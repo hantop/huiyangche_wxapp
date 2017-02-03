@@ -4,12 +4,15 @@
     "pages/logs/logs",
     "pages/querybrand/querybrand",
     "pages/queryserial/queryserial",
-    "pages/bizmall/pay"
+    "pages/bizmall/pay",
+    "pages/ChooseCar/ChooseCarBrand",    
+    "pages/ChooseCar/ChooseCarSerial",    
+    "pages/ChooseCar/ChooseCar"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "车主卡",
+    "navigationBarTitleText": "易车惠养车",
     "navigationBarTextStyle":"black"
   },
    "networkTimeout": {

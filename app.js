@@ -27,8 +27,23 @@ App({
   },
   globalData:{
     userInfo:null,
-    encryptedData:null
-  }
+    encryptedData:null,
+    WebApiUrl:"https://test.webapi.cz.yiche.com/",
+    WebAppId:"gj"
+  },
+  //组装webapi的Url
+  AssembleUrl:function(Methodname,obj){
+     
+    var WebApiurl = this.globalData.WebApiUrl
+    var appid = this.globalData.WebAppId;
+    var url = WebApiurl + Methodname + "?appid=" + appid;
+    if (typeof (obj) != "undefined") {
+      for (var Key in obj) {
+        url += '&' + '' + Key + '=' + obj[Key] + '';
+      }
+    }
+    return url;
+  },
 })
 
 

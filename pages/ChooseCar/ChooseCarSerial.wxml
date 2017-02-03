@@ -1,0 +1,9 @@
+<view>
+  <image src="{{CarBrandLogo}}"></image>
+  <view class="section__title">{{CarBrandName}}</view>
+</view>
+<view class="section">
+  <view class="flex-wrp" style="flex-direction:column;" wx:for="{{CarSerials}}" bindtap="ToCar" data-hi="{{item.SerialID}}" >
+    <image src="{{item.SerialLogo}}" bindtap="ToCarSerial('{{item.SerialID}}')"></image>
+  </view>
+</view>

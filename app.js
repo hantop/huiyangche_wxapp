@@ -74,7 +74,7 @@ App({
                     var openID = dataInfo.openId
                     if(openID){
                       /** 缓存openID */
-                      wx.setStorageSync('openID', openID)
+                      //wx.setStorageSync('openID', openID)
                       
                       /** 获取userID */
                       submiturl = that.AssembleUrl('user/GetUserByAccount',{})
@@ -96,14 +96,12 @@ App({
                         success: function (reqRes2) {
                           //console.log(reqRes2.data.returncode);
                           if(reqRes2.data.returncode===0){
-                            // 缓存userid、CusUserID、CusYCUserID、UserName、Phone 
+                            // 缓存Account、CusUserID、CusYCUserID、UserName、Phone 
                             var dataInfo2 = reqRes2.data.data.list[0];
-                            wx.setStorageSync('Phone', dataInfo2.Phone)
-                            wx.setStorageSync('UserName', dataInfo2.UserName)
-                            wx.setStorageSync('CusUserID', dataInfo2.CusUserID)
-                            wx.setStorageSync('CusYCUserID', dataInfo2.CusYCUserID)
+                            wx.setStorageSync('curUserInfo', dataInfo2)
                           }
-                          /**console.log(wx.getStorageSync('Phone'));
+                          /**
+                          console.log('111111111111'+wx.getStorageSync('curUserInfo').CusUserID);
                           console.log(wx.getStorageSync('UserName'));
                           console.log(wx.getStorageSync('CusUserID'));
                           console.log(wx.getStorageSync('CusYCUserID'));

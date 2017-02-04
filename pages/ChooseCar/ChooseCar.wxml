@@ -12,7 +12,7 @@
 <view  wx:for="{{CarYears}}" wx:for-item="y" >
  <view>{{y}}</view> 
  <view   wx:for="{{Cars[index]}}" wx:for-item="c">
-    <navigator url="AddCar?id={{c.CarId}}">
+    <navigator url="AddCar?id={{c.CarID}}">
     <view>{{c.CarFullName}}</view></navigator>
  
 </view>

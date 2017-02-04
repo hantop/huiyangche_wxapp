@@ -1,0 +1,17 @@
+  <view  class="userinfo">
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+  </view>
+
+<view class="container">
+ <navigator url="/pages/UC/Order/Order" open-type="navigate">
+  <view class="textContainer">
+    <lable class="textStyle">订单</lable>
+  </view>
+  </navigator>
+  <navigator url="/pages/UC/Coupon/Coupon" open-type="navigate">
+   <view class="textContainer">
+    <lable class="textStyle">优惠卷</lable>
+  </view>
+  </navigator>
+</view>

@@ -1,0 +1,53 @@
+<view>
+    <view>
+        <label>车型</label>
+        <label></label>
+    </view>
+    <view>
+        <label>车牌</label>
+        <label></label>
+    </view>
+    <view class="widgets__item">
+        <view i class="widgets__info {{open ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+            <text class="widgets__info-name">完善其他信息，获取更多优质服务</text>
+            <image class="widgets__info-img" src="/image/arrowright.png" mode="aspectFill"  />
+        </view>
+        <view class="widgets__list {{open ? 'widgets__list_show' : ''}}">
+            <block>
+                <view>
+                    <label>上牌时间</label>
+                    <label>
+                        <input placeholder="牌照"auto-focus/>
+                    </label>
+                </view>
+                <view>
+                    <label>当前里程</label>
+                    <label>
+                        <input password type="number" placeholder="这是一个数字输入框"  />
+                    </label>
+                </view>
+                <view>
+                    <label>上次投保日期</label>
+                    <label>
+                        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"
+                                bindchange="bindDateChange">
+                            <view class="picker">当前选择: {{date}}</view>
+                        </picker>
+                    </label>
+                </view>
+                <view>
+                    <label>上次保养日期</label>
+                    <label>
+                        <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01"
+                                bindchange="bindDateChange">
+                            <view class="picker">当前选择: {{date}}</view>
+                        </picker>
+                    </label>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
+<view class="button-wrapper">
+    <button bindtap="setLoading">点击设置以上按钮loading属性</button>
+</view>

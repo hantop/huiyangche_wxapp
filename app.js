@@ -25,6 +25,7 @@ App({
       });
     }
   },
+  //配置信息
   globalData:{
     userInfo:null,
     encryptedData:null,

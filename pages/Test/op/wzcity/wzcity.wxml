@@ -1,7 +1,3 @@
-<!-- wzcity.wxml -->
-<view class="container">
-  <view class="textContainer">
-    <text class="textStyle">{{acd}}</text>
-    <text class="textStyle">参数呢？</text>
-  </view>
-</view>
+<!--wxml-->
+<view> {{money}} </view>
+<view> show me the money </view>

@@ -10,8 +10,8 @@
     "pages/Test/share/index",   
     "pages/UC/index",
     "pages/UC/Coupon/Coupon",
-    "pages/UC/Order/Order"
-
+    "pages/UC/Order/Order",
+    "pages/Test/op/wzcity/wzcity"
   ],  
   "window":{
     "backgroundTextStyle":"light",

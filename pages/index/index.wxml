@@ -9,6 +9,7 @@
           <navigator url="/pages/querybrand/querybrand" hover-class="navigator-hover">跳转到新页面</navigator>
           <navigator url="/pages/Test/bizmall/pay" hover-class="navigator-hover">支付</navigator>
           <navigator url="/pages/Test/share/index" hover-class="navigator-hover">分享</navigator>
+          <navigator url="/pages/Test/op/wzcity/wzcity" hover-class="navigator-hover">违章城市统计</navigator>
         </swiper-item>
         <block wx:for="{{UserCarInfos}}">
           <swiper-item>

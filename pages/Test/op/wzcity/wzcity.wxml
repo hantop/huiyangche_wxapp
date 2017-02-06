@@ -1,5 +1,7 @@
+<!-- wzcity.wxml -->
 <view class="container">
   <view class="textContainer">
-    <text class="textStyle">{{text}}</text>
+    <text class="textStyle">{{acd}}</text>
+    <text class="textStyle">参数呢？</text>
   </view>
 </view>
